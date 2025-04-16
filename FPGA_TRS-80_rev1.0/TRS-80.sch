@@ -16772,6 +16772,8 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <part name="R55" library="rcl" deviceset="R-US_" device="R0805" value="470"/>
 <part name="R56" library="rcl" deviceset="R-US_" device="R0805" value="2k2"/>
 <part name="POWER" library="Signetics" deviceset="LED_0805" device=""/>
+<part name="R57" library="rcl" deviceset="R-US_" device="R0805" value="5K6"/>
+<part name="R58" library="rcl" deviceset="R-US_" device="R0805" value="5K6"/>
 </parts>
 <sheets>
 <sheet>
@@ -16943,6 +16945,8 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <instance part="R55" gate="G$1" x="238.76" y="299.72"/>
 <instance part="R56" gate="G$1" x="292.1" y="312.42"/>
 <instance part="POWER" gate="G$1" x="304.8" y="312.42" rot="R90"/>
+<instance part="R57" gate="G$1" x="213.36" y="58.42"/>
+<instance part="R58" gate="G$1" x="213.36" y="66.04"/>
 </instances>
 <busses>
 </busses>
@@ -17346,6 +17350,16 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <junction x="231.14" y="314.96"/>
 <junction x="231.14" y="322.58"/>
 <junction x="231.14" y="307.34"/>
+</segment>
+<segment>
+<pinref part="R58" gate="G$1" pin="1"/>
+<wire x1="208.28" y1="66.04" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="R57" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="66.04" x2="198.12" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="58.42" x2="205.74" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="58.42" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
+<junction x="205.74" y="66.04"/>
+<label x="198.12" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="2V5" class="0">
@@ -18542,8 +18556,13 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <net name="I2C_SCL" class="0">
 <segment>
 <pinref part="U$17" gate="G$1" pin="SCL"/>
-<wire x1="220.98" y1="45.72" x2="231.14" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="45.72" x2="223.52" y2="45.72" width="0.1524" layer="91"/>
 <label x="231.14" y="45.72" size="1.778" layer="95"/>
+<pinref part="R57" gate="G$1" pin="2"/>
+<wire x1="223.52" y1="45.72" x2="231.14" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="58.42" x2="223.52" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="58.42" x2="223.52" y2="45.72" width="0.1524" layer="91"/>
+<junction x="223.52" y="45.72"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="IO@83"/>
@@ -18554,8 +18573,13 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <net name="I2C_SDA" class="0">
 <segment>
 <pinref part="U$17" gate="G$1" pin="SDA"/>
-<wire x1="220.98" y1="43.18" x2="231.14" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="43.18" x2="226.06" y2="43.18" width="0.1524" layer="91"/>
 <label x="231.14" y="43.18" size="1.778" layer="95"/>
+<pinref part="R58" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="43.18" x2="231.14" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="66.04" x2="226.06" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="66.04" x2="226.06" y2="43.18" width="0.1524" layer="91"/>
+<junction x="226.06" y="43.18"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="IO@84"/>
@@ -19188,7 +19212,6 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <wire x1="193.04" y1="50.8" x2="193.04" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U$17" gate="G$1" pin="VSS"/>
 <wire x1="193.04" y1="48.26" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="43.18" x2="195.58" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="43.18" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="U$17" gate="G$1" pin="A1"/>
 <wire x1="193.04" y1="43.18" x2="182.88" y2="43.18" width="0.1524" layer="91"/>
@@ -19196,7 +19219,6 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <label x="182.88" y="43.18" size="1.778" layer="95"/>
 <junction x="193.04" y="48.26"/>
 <junction x="193.04" y="43.18"/>
-<junction x="195.58" y="43.18"/>
 </segment>
 <segment>
 <pinref part="U$12" gate="G$1" pin="GND"/>

@@ -18219,7 +18219,7 @@ W = angled&lt;p&gt;
 <label x="391.16" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="HDMI_RP" class="0">
+<net name="HDMI_BP" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="342.9" y1="91.44" x2="332.74" y2="91.44" width="0.1524" layer="91"/>
@@ -18231,7 +18231,7 @@ W = angled&lt;p&gt;
 <label x="195.58" y="167.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="HDMI_RN" class="0">
+<net name="HDMI_BN" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="342.9" y1="83.82" x2="332.74" y2="83.82" width="0.1524" layer="91"/>
@@ -18267,7 +18267,7 @@ W = angled&lt;p&gt;
 <label x="185.42" y="167.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="HDMI_BP" class="0">
+<net name="HDMI_RP" class="0">
 <segment>
 <pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="342.9" y1="60.96" x2="332.74" y2="60.96" width="0.1524" layer="91"/>
@@ -18279,7 +18279,7 @@ W = angled&lt;p&gt;
 <label x="177.8" y="167.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="HDMI_BN" class="0">
+<net name="HDMI_RN" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="342.9" y1="53.34" x2="332.74" y2="53.34" width="0.1524" layer="91"/>
